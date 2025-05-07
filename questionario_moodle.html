@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Rating Test</title>
+  <link rel="stylesheet" href="https://dpozzi-liuc.github.io/heritage-rating/style.css">
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+    .image-container { text-align: center; margin-bottom: 20px; }
+    .stars { display: flex; justify-content: center; gap: 5px; margin-top: 10px; }
+    .stars button { font-size: 24px; cursor: pointer; background: none; border: none; }
+    .stars button.selected { color: gold; }
+    #nextBtn { margin-top: 20px; display: block; }
+  </style>
+</head>
+<body>
+  <h1>Image Rating Test</h1>
+  <p>Please rate each image based on how desirable, interesting, or positive you find the subject.</p>
+
+  <div class="image-container">
+    <img id="currentImage" src="https://dpozzi-liuc.github.io/heritage-rating/heritage/img1.png" alt="Image" width="400">
+    <div class="stars" id="rating">
+      <button data-value="1">★</button>
+      <button data-value="2">★</button>
+      <button data-value="3">★</button>
+      <button data-value="4">★</button>
+      <button data-value="5">★</button>
+    </div>
+    <button id="nextBtn">Next Image</button>
+  </div>
+
+  <p id="thankyou" style="display:none;">Thank you for participating!</p>
+
+  <script src="https://dpozzi-liuc.github.io/heritage-rating/moodle-logic.js" defer></script>
+</body>
+</html>
